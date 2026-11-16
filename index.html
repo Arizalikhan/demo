@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA TECH — Premium Web Development & Digital Agency</title>
+  <meta name="description" content="We build modern, fast, and scalable digital experiences that help ambitious businesses stand out and scale globally." />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="NOVA TECH — Premium Digital Agency" />
+  <meta property="og:description" content="We design and develop high-performance websites and digital products." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Glowing Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Background Animated Particle Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="logo(1).png" alt="NOVA TECH Logo">
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="Portfolio.html" class="nav-link">Our Portfolio</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm magnetic-btn">
+          <span>Let's Started</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-glow blob-1"></div>
+    <div class="hero-glow blob-2"></div>
+
+    <div class="container hero-wrapper">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span class="badge-spark">✦</span> WE BUILD DIGITAL EXPERIENCES
+        </div>
+
+        <h1 class="hero-title">
+          We Build <span class="gradient-text glow">Websites</span> That Make Businesses <span class="gradient-text glow">Stand Out.</span>
+        </h1>
+
+        <p class="hero-description">
+          From stunning websites to powerful digital experiences, we design and build modern solutions that help ambitious businesses grow.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary magnetic-btn">
+            <span>Start a Project</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#Portfolio" class="btn btn-secondary magnetic-btn">
+            <span>View Our Portfolio</span>
+            <i class="fa-solid fa-circle-play"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="browser-mockup floating">
+          <div class="browser-header">
+            <div class="browser-dots">
+              <span class="dot close"></span>
+              <span class="dot minimize"></span>
+              <span class="dot maximize"></span>
+            </div>
+            <div class="browser-address">novatech.agency/preview</div>
+          </div>
+          <div class="browser-body">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Modern Agency Dashboard UI" class="hero-img" />
+            <div class="overlay-card card-1 floating-slow">
+              <i class="fa-solid fa-bolt icon-gradient"></i>
+              <div>
+                <p class="card-title">Performance Score</p>
+                <p class="card-value">99.8% Speed</p>
+              </div>
+            </div>
+            <div class="overlay-card card-2 floating-reverse">
+              <i class="fa-solid fa-chart-line icon-gradient"></i>
+              <div>
+                <p class="card-title">Conversion Rate</p>
+                <p class="card-value">+145% Growth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <h2 class="stat-number" data-target="50">0</h2>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Projects Delivered</p>
+        </div>
+        <div class="stat-card reveal" data-delay="100">
+          <h2 class="stat-number" data-target="30">0</h2>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Happy Clients</p>
+        </div>
+        <div class="stat-card reveal" data-delay="200">
+          <h2 class="stat-number" data-target="3">0</h2>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Years Experience</p>
+        </div>
+        <div class="stat-card reveal" data-delay="300">
+          <h2 class="stat-number" data-target="99">0</h2>
+          <span class="stat-plus">%</span>
+          <p class="stat-label">Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">OUR SERVICES</span>
+        <h2 class="section-title">Everything You Need to <span class="gradient-text">Go Digital.</span></h2>
+        <p class="section-subtitle">
+          We combine strategy, design and technology to create digital experiences that actually perform.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="card-header">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="service-num">01</span>
+          </div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Fast, responsive and scalable websites built for modern businesses using clean architecture.</p>
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="card-header">
+            <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <span class="service-num">02</span>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-desc">Beautiful interfaces designed around your users and your brand to maximize engagement.</p>
+        
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-header">
+            <div class="service-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            <span class="service-num">03</span>
+          </div>
+          <h3 class="service-title">E-Commerce</h3>
+          <p class="service-desc">High-converting online stores built to turn visitors into loyal customers with seamless checkout.</p>
+        
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-header">
+            <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+            <span class="service-num">04</span>
+          </div>
+          <h3 class="service-title">SEO Optimization</h3>
+          <p class="service-desc">Technical and on-page optimization designed to improve visibility and organic search rankings.</p>
+        
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="card-header">
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <span class="service-num">05</span>
+          </div>
+          <h3 class="service-title">Branding</h3>
+          <p class="service-desc">Distinctive visual identities, logo systems, and design guidelines that make your business memorable.</p>
+        
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-header">
+            <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <span class="service-num">06</span>
+          </div>
+          <h3 class="service-title">Custom Solutions</h3>
+          <p class="service-desc">Powerful digital solutions tailored specifically to complex enterprise and startup business needs.</p>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Why Choose Us Section -->
+  <section class="why-us-section">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-visual reveal">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1000&q=80" alt="Modern Developer Studio Space" class="Portfoliospace-img" />
+            <div class="experience-badge">
+              <span class="badge-num">3+</span>
+              <span class="badge-text">Years of Engineering Excellence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-content reveal" data-delay="100">
+          <span class="section-tag">WHY CHOOSE US</span>
+          <h2 class="section-title">Engineering Digital Products That <span class="gradient-text">Outperform.</span></h2>
+          <p class="section-desc">
+            We don't do generic templates. Every website we build is custom engineered for high conversion, lightning speed, and aesthetic mastery.
+          </p>
+
+          <div class="features-list">
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Strategy First Approach</div>
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Modern Clean Technology</div>
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Pixel-Perfect Precision</div>
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Sub-Second Fast Performance</div>
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Mobile-First Architecture</div>
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Dedicated Long-Term Support</div>
+          </div>
+
+          <div class="skills-wrapper">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>UI/UX & Visual Design</span>
+                <span>95%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-progress="95%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Engineering & Clean Code</span>
+                <span>98%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-progress="98%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Performance & SEO</span>
+                <span>94%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-progress="94%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">OUR METHODOLOGY</span>
+        <h2 class="section-title">From Idea to <span class="gradient-text">Launch.</span></h2>
+        <p class="section-subtitle">A proven step-by-step roadmap to turn your vision into reality.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-step reveal">
+          <div class="step-node">01</div>
+          <div class="step-card">
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">We deeply analyze your business objectives, market audience, and target competitors to build a solid foundation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal" data-delay="100">
+          <div class="step-node">02</div>
+          <div class="step-card">
+            <h3 class="step-title">Strategy</h3>
+            <p class="step-desc">We blueprint the site architecture, plan user journeys, wireframe key pages, and select the optimal tech stack.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal" data-delay="200">
+          <div class="step-node">03</div>
+          <div class="step-card">
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">We craft bespoke, futuristic UI concepts, interactive prototypes, and micro-animations tailored to your brand identity.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal" data-delay="300">
+          <div class="step-node">04</div>
+          <div class="step-card">
+            <h3 class="step-title">Develop</h3>
+            <p class="step-desc">Our developers translate designs into pixel-perfect, clean, accessible code with ultra-fast responsiveness.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal" data-delay="400">
+          <div class="step-node">05</div>
+          <div class="step-card">
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">We perform multi-device testing, SEO optimization, speed tuning, and seamlessly push your site live to the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2 class="section-title">Loved by <span class="gradient-text">Ambitious Businesses.</span></h2>
+        <p class="section-subtitle">Read what our client partners have to say about Portfolioing with Nova Tech.</p>
+      </div>
+
+      <div class="testimonial-slider-container reveal">
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote">
+              "Nova Tech completely transformed our online presence. The website looks incredible, loads instantly, and our overall conversion rates improved significantly within weeks!"
+            </p>
+            <div class="client-info">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah Khan" class="client-avatar" />
+              <div>
+                <h4 class="client-name">Sarah Khan</h4>
+                <p class="client-role">Founder, Luxe Studio</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote">
+              "The team's attention to visual detail and code quality is unprecedented. They delivered our complex SaaS web app on time and blew our board members away."
+            </p>
+            <div class="client-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" class="client-avatar" />
+              <div>
+                <h4 class="client-name">Marcus Vance</h4>
+                <p class="client-role">CTO, Nexus Analytics</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote">
+              "Hands down the best web agency experience we have ever had. The animations are buttery smooth and the mobile response is absolute perfection."
+            </p>
+            <div class="client-info">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Amina Patel" class="client-avatar" />
+              <div>
+                <h4 class="client-name">Amina Patel</h4>
+                <p class="client-role">Head of Product, Verve Media</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn next-btn" id="nextTestimonial" aria-label="Next Testimonial">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Call To Action (CTA) Section -->
+  <section class="cta-section">
+    <div class="cta-glow-orb"></div>
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-content">
+          <h2 class="cta-title">Have an Idea? <span class="gradient-text">Let's Build It.</span></h2>
+          <p class="cta-desc">
+            Tell us what you're imagining and we'll turn it into a digital experience that gets noticed and converts.
+          </p>
+          <a href="#contact" class="btn btn-primary btn-lg magnetic-btn">
+            <span>Start Your Project</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-bio">
+            We design and develop futuristic digital experiences for ambitious brands scaling worldwide.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul>
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="Portfolio.html" class="nav-link">Our Portfolio</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+            <div class="info-items">
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <h4>Email Us</h4>
+                  <p>hello@novatech.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                  <h4>WhatsApp / Phone</h4>
+                  <p>+92 300 1234567</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Karachi, Sindh, Pakistan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Tech. All Rights Reserved.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

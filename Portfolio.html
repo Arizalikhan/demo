@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Portfolio — NOVA TECH</title>
+  <meta name="description" content="Explore recent web development projects built by Nova Tech for small businesses, stores, and clinics." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="logo(1).png" alt="NOVA TECH Logo"></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="Portfolio.html" class="nav-link active">Our Portfolio</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm magnetic-btn"><span>Get Started</span><i class="fa-solid fa-arrow-right"></i></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="reveal text-center">
+        <span class="section-tag">OUR PORTFOLIO</span>
+        <h1 class="hero-title">Built For <span class="gradient-text">Real Businesses.</span></h1>
+        <p class="section-subtitle">Filter through our recent website designs and client solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <div class="container">
+      
+      <!-- Filter Controls -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+      </div>
+
+      <!-- Dynamic Portfolio Grid (Rendered inside Card Container by JS) -->
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+
+    </div>
+  </section>
+
+  <!-- Modal View for Full Showcase -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalBody">
+        <!-- Dynamic content filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-bio">
+            We design and develop futuristic digital experiences for ambitious brands scaling worldwide.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="Portfolio.html" class="nav-link active">Our Portfolio</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="info-items">
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>hello@novatech.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp / Phone</h4>
+                <p>+92 300 1234567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Karachi, Sindh, Pakistan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Tech. All Rights Reserved.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>

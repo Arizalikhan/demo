@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services — NOVA TECH</title>
+  <meta name="description" content="Affordable and professional web development, e-commerce, branding, and maintenance services for small businesses." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="logo(1).png" alt="NOVA TECH Logo"></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="Portfolio.html" class="nav-link">Our Portfolio</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm magnetic-btn"><span>Get Started</span><i class="fa-solid fa-arrow-right"></i></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header Banner -->
+  <section class="page-header">
+    <div class="container">
+      <div class="reveal text-center">
+        <span class="section-tag">WHAT WE OFFER</span>
+        <h1 class="hero-title">High-Quality Services, <span class="gradient-text">Affordable Pricing.</span></h1>
+        <p class="section-subtitle">We craft digital solutions tailored for startups, local shops, clinics, and growing businesses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Services Grid -->
+  <section class="services-detail-section">
+    <div class="container">
+      <div class="services-full-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-detail-card reveal">
+          <div class="sd-header">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="pricing-badge">Starting at $199</span>
+          </div>
+          <h3>Custom Web Development</h3>
+          <p class="sd-desc">Fast, secure, and clean code web development tailored directly to your business goals.</p>
+          <div class="sd-features">
+            <h4>What's Included:</h4>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Clean HTML5/CSS3/JS architecture</li>
+              <li><i class="fa-solid fa-check"></i> High performance & speed optimization</li>
+              <li><i class="fa-solid fa-check"></i> Mobile & tablet responsive</li>
+              <li><i class="fa-solid fa-check"></i> Basic SEO structure</li>
+            </ul>
+          </div>
+          <div class="sd-suitable"><strong>Suitable for:</strong> Local businesses, clinics, portfolio sites & consultants.</div>
+          <a href="contact.html?service=web-dev" class="btn btn-secondary btn-sm magnetic-btn"><span>Get Started</span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-detail-card reveal" data-delay="100">
+          <div class="sd-header">
+            <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <span class="pricing-badge">Starting at $299</span>
+          </div>
+          <h3>E-Commerce Websites</h3>
+          <p class="sd-desc">User-friendly online shops built to display products effectively and convert visitors into buyers.</p>
+          <div class="sd-features">
+            <h4>What's Included:</h4>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Product catalog & shopping cart</li>
+              <li><i class="fa-solid fa-check"></i> Payment gateway integration</li>
+              <li><i class="fa-solid fa-check"></i> Order management setup</li>
+              <li><i class="fa-solid fa-check"></i> Mobile-first design</li>
+            </ul>
+          </div>
+          <div class="sd-suitable"><strong>Suitable for:</strong> Retail stores, clothing brands, physical product sellers.</div>
+          <a href="contact.html?service=ecommerce" class="btn btn-secondary btn-sm magnetic-btn"><span>Get Started</span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-detail-card reveal" data-delay="200">
+          <div class="sd-header">
+            <div class="service-icon"><i class="fa-brands fa-wordpress"></i></div>
+            <span class="pricing-badge">Starting at $149</span>
+          </div>
+          <h3>WordPress & CMS Development</h3>
+          <p class="sd-desc">Easy-to-manage websites allowing you to add products, posts, and update text effortlessly.</p>
+          <div class="sd-features">
+            <h4>What's Included:</h4>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Custom layout design</li>
+              <li><i class="fa-solid fa-check"></i> Admin training & walkthrough</li>
+              <li><i class="fa-solid fa-check"></i> Security & anti-spam setup</li>
+              <li><i class="fa-solid fa-check"></i> Essential plugin setup</li>
+            </ul>
+          </div>
+          <div class="sd-suitable"><strong>Suitable for:</strong> Content creators, blogs, service businesses & agency sites.</div>
+          <a href="contact.html?service=wordpress" class="btn btn-secondary btn-sm magnetic-btn"><span>Get Started</span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-detail-card reveal" data-delay="200">
+          <div class="sd-header">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <span class="pricing-badge">Starting at $49/mo</span>
+          </div>
+          <h3>Website Maintenance & SEO</h3>
+          <p class="sd-desc">Ongoing updates, speed monitoring, security patches, and local Google SEO setup.</p>
+          <div class="sd-features">
+            <h4>What's Included:</h4>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Regular backups & security checkup</li>
+              <li><i class="fa-solid fa-check"></i> On-page SEO & Google index submission</li>
+              <li><i class="fa-solid fa-check"></i> Monthly content updates</li>
+              <li><i class="fa-solid fa-check"></i> Speed checks</li>
+            </ul>
+          </div>
+          <div class="sd-suitable"><strong>Suitable for:</strong> Any existing business website needing active care.</div>
+          <a href="contact.html?service=maintenance" class="btn btn-secondary btn-sm magnetic-btn"><span>Get Started</span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Not Sure What You Need Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-content">
+          <h2 class="cta-title">Not Sure <span class="gradient-text">What You Need?</span></h2>
+          <p class="cta-desc">You don't need technical knowledge. Tell us about your project in simple words and we will recommend the best solution for your budget.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg magnetic-btn"><span>Talk To Us</span><i class="fa-solid fa-comments"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-bio">
+            We design and develop futuristic digital experiences for ambitious brands scaling worldwide.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul>
+               <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="Portfolio.html" class="nav-link">Our Portfolio</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+        <div class="info-items">
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>hello@novatech.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp / Phone</h4>
+                <p>+92 300 1234567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Karachi, Sindh, Pakistan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Tech. All Rights Reserved.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

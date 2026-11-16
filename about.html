@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — NOVA TECH</title>
+  <meta name="description" content="Learn about Nova Tech - premier web design & development agency building futuristic digital experiences." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="logo(1).png" alt="NOVA TECH Logo"></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="Portfolio.html" class="nav-link">Our Portfolio</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm magnetic-btn"><span>Get Started</span><i class="fa-solid fa-arrow-right"></i></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="reveal text-center">
+        <span class="section-tag">WHO WE ARE</span>
+        <h1 class="hero-title">Architects of Modern & <span class="gradient-text">Scalable Web Experiences.</span></h1>
+        <p class="section-subtitle">Nova Tech is a modern digital agency engineering clean code, high-converting interfaces, and strong brand identities for businesses, clinics, e-commerce, and startups worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story & Vision -->
+  <section class="about-story-section">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-visual reveal">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Nova Tech Development Team" class="Portfoliospace-img" />
+          </div>
+        </div>
+        <div class="why-content reveal" data-delay="100">
+          <span class="section-tag">OUR ORIGIN & VISION</span>
+          <h2 class="section-title">Redefining How Businesses <span class="gradient-text">Build Online.</span></h2>
+          <p class="section-desc">
+            We started Nova Tech with a very clear objective: to end the compromise between overpriced web design agencies and buggy, slow DIY page builders.
+          </p>
+          <p class="section-desc">
+            Every business deserves a fast, responsive, and custom-coded website that reflects its true brand value. We bring technical expertise in HTML5, CSS3, JavaScript, and UI design to craft digital solutions that turn site visitors into long-term clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agency Metrics / Numbers -->
+  <section class="stats-section" style="padding: 60px 0; background: rgba(255,255,255,0.01); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+      <div class="process-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="process-card reveal" style="text-align: center;">
+          <h2 class="gradient-text" style="font-size: 3rem; font-weight: 800; margin-bottom: 5px;">50+</h2>
+          <p style="color: #a0a0a0; font-weight: 500;">Projects Completed</p>
+        </div>
+        <div class="process-card reveal" data-delay="100" style="text-align: center;">
+          <h2 class="gradient-text" style="font-size: 3rem; font-weight: 800; margin-bottom: 5px;">100%</h2>
+          <p style="color: #a0a0a0; font-weight: 500;">Responsive & Mobile-Ready</p>
+        </div>
+        <div class="process-card reveal" data-delay="200" style="text-align: center;">
+          <h2 class="gradient-text" style="font-size: 3rem; font-weight: 800; margin-bottom: 5px;">99%</h2>
+          <p style="color: #a0a0a0; font-weight: 500;">Client Satisfaction</p>
+        </div>
+        <div class="process-card reveal" data-delay="300" style="text-align: center;">
+          <h2 class="gradient-text" style="font-size: 3rem; font-weight: 800; margin-bottom: 5px;">24/7</h2>
+          <p style="color: #a0a0a0; font-weight: 500;">Dedicated Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed CEO / Leadership Spotlight -->
+  <section class="ceo-section" style="padding: 100px 0;">
+    <div class="container">
+      <div class="why-us-grid" style="align-items: center;">
+        <div class="why-content reveal">
+          <span class="section-tag">EXECUTIVE LEADERSHIP</span>
+          <h2 class="section-title">Leadership Driven by <span class="gradient-text">Technical Precision</span></h2>
+          <p class="section-desc" style="font-style: italic; font-size: 1.15rem; border-left: 3px solid #00f2fe; padding-left: 18px; margin: 25px 0; color: #e0e0e0;">
+            "At Nova Tech, code is not just syntax—it's the backbone of your brand's digital existence. We write clean, fast, and light code so your business can scale without technical barriers."
+          </p>
+          <p class="section-desc">
+            With hands-on expertise in front-end development, responsive layouts, interactive JS animations, and graphic branding, our CEO oversees every project to guarantee top-tier code structure and flawless visual design.
+          </p>
+          <div style="margin-top: 30px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary btn-sm magnetic-btn"><span>Get in Touch with CEO</span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Portfolio.html" class="btn btn-secondary btn-sm magnetic-btn"><span>View Our Work</span></a>
+          </div>
+        </div>
+        <div class="why-visual reveal" data-delay="100">
+          <div class="image-wrapper" style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6);">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="CEO - Nova Tech" class="Portfoliospace-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack & Capabilities -->
+  <section class="tech-stack-section" style="padding: 80px 0; background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0) 100%);">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">OUR CORE CAPABILITIES</span>
+        <h2 class="section-title">Technologies We <span class="gradient-text">Master</span></h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card reveal">
+          <div style="font-size: 2.2rem; color: #00f2fe; margin-bottom: 15px;"><i class="fa-brands fa-html5"></i></div>
+          <h3>Front-End Engineering</h3>
+          <p>Writing zero-bloat HTML5, modern CSS3 layouts, and dynamic JavaScript (ES6+) for ultra-fast, smooth web pages.</p>
+        </div>
+        <div class="process-card reveal" data-delay="100">
+          <div style="font-size: 2.2rem; color: #00f2fe; margin-bottom: 15px;"><i class="fa-solid fa-crop-simple"></i></div>
+          <h3>UI/UX & Branding</h3>
+          <p>Designing modern agency-grade logos, sleek layouts, and custom visual identities tailored specifically to your target niche.</p>
+        </div>
+        <div class="process-card reveal" data-delay="200">
+          <div style="font-size: 2.2rem; color: #00f2fe; margin-bottom: 15px;"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Responsive Precision</h3>
+          <p>Flawless displays across all screens—from mobile devices and tablets to ultra-wide desktop monitors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">HOW WE WORK</span>
+        <h2 class="section-title">Our Simple <span class="gradient-text">4-Step Process</span></h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card reveal">
+          <div class="process-num">01</div>
+          <h3>Discovery & Strategy</h3>
+          <p>We analyze your business goals, brand identity, target audience, and website functional requirements.</p>
+        </div>
+        <div class="process-card reveal" data-delay="100">
+          <div class="process-num">02</div>
+          <h3>Design & Wireframing</h3>
+          <p>We structure visual layouts, typography, and color palettes for clear approval before development.</p>
+        </div>
+        <div class="process-card reveal" data-delay="200">
+          <div class="process-num">03</div>
+          <h3>Clean Development</h3>
+          <p>We craft high-performance code, add interactive cursor animations, and test cross-browser speed.</p>
+        </div>
+        <div class="process-card reveal" data-delay="300">
+          <div class="process-num">04</div>
+          <h3>Launch & Scaling</h3>
+          <p>We deploy your site live on web hosting/GitHub, test performance, and provide post-launch support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">QUESTIONS & ANSWERS</span>
+        <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+      </div>
+
+      <div class="process-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="process-card reveal">
+          <h3>How long does a website project take?</h3>
+          <p>Most landing pages and multi-page business websites are delivered within 3 to 7 business days, depending on project complexity.</p>
+        </div>
+        <div class="process-card reveal" data-delay="100">
+          <h3>Will my website work on mobile phones?</h3>
+          <p>Yes, 100%. All our layouts are responsive and optimized for mobile phones, tablets, laptops, and desktop screens.</p>
+        </div>
+        <div class="process-card reveal" data-delay="200">
+          <h3>Can Nova Tech design custom logos as well?</h3>
+          <p>Yes! We create professional agency logos, branding assets, and custom digital graphic elements tailored for your company.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready To Launch <span class="gradient-text">Your Next Project?</span></h2>
+          <p class="cta-desc">Let's talk about your business objectives and start building today.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg magnetic-btn"><span>Get Started Now</span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-bio">
+            We design and develop futuristic digital experiences for ambitious brands scaling worldwide.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="Portfolio.html" class="nav-link">Our Portfolio</a></li>
+              <li><a href="about.html" class="nav-link active">About Us</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="info-items">
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>hello@novatech.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp / Phone</h4>
+                <p>+92 300 1234567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Karachi, Sindh, Pakistan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Tech. All Rights Reserved.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
